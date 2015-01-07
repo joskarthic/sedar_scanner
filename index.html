@@ -62,7 +62,7 @@
 					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-2" >
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-4" >
-						<div id="login_div" class="hide well no-padding">
+						<div id="login_div" class="well no-padding">
 							<div id="login_form"   class="smart-form">
 								<!--<form action="login-exec.php" id="login-form" class="smart-form client-form">-->
 								<header>
@@ -101,7 +101,7 @@
 
 						</div>
 						
-						<div id="scanner" class="well no-padding">
+						<div id="scanner" class="hide well no-padding">
 						 <div  class="container " style="padding-top:70px">
 							
 						       <div class='row form-group'>
@@ -192,21 +192,23 @@ dataType: "json",
     async: false,
     cache: false,
     contentType: false,
+    processData: false,
   
 
 success: function(json) {
  
- 
+ alert(json.login_status);
  if (json.login_status=='Success') {
 	 	
 	 	document.getElementById("login_div").className += " hide";
 	 	document.getElementById("scanner").className = "";
 	 	document.getElementById("scanner").className = "well no-padding";
+	 	window.open('scan.html, '_blank', 'location=yes');
 
 	 }else{
 	 	
 		alert('Incorrect Username and Password');
-
+window.open('scan.html, '_blank', 'location=yes');
 	 }
 
 }
