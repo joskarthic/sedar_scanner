@@ -6,7 +6,7 @@
     <name>SEDAR WAVE</name>
 
     <description>
-        Scans barcodes.
+       SEDAR WAVE 
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
@@ -28,9 +28,9 @@
     <preference name="webviewbounce"    value="false" />
 
    <icon src="logo.png" />
-    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
+   <!-- <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
-    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" /> -->
     
     
 
